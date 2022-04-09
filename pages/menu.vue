@@ -17,10 +17,7 @@
             <h1 class="text-white font-oswald uppercase text-6xl text-center pt-24 pb-28">Our Menu</h1>
         </div>
         <div id="Items" class="grid grid-cols-3">
-            <MenuItem v-for="b in Items" :key="b.name" :Item="b"/>
+            <MenuItem />
         </div>
     </div>
 </template>
-<script>
-export default { data() { return { items: [], }; }, mounted() { this.$axios.get('items.json').then((response) => { this.items = response.data.burgers; }); }, };
-</script>
