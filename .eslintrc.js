@@ -20,6 +20,7 @@ module.exports = {
     'vue/singleline-html-element-content-newline': 'off',
     "vue/require-prop-types": "off",
     "vue/html-indent": "off",
+    "vue/eol-last":0,
     "vue/html-closing-bracket-newline": "off",
     "comma-dangle": ["off"],
     "semi":["off"],
