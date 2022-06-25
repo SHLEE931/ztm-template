@@ -1,63 +1,9 @@
 <template>
-<div>
-  <div id='header' class="bg-[url('/hero-bg.jpg')] px-20">
-    <div id='menu' class="grid grid-cols-2 py-5">
-      <div id='menu-left'>
-        <img src="logo.png" class="w-[150px]" alt=""/>
-      </div>
-      <div id='menu-right'>
-        <ul class="grid grid-cols-4 text-lg text-white uppercase font-oswald pt-5">
-          <li>About Us</li>
-          <li>Our Menu</li>
-          <li>Locations</li>
-          <li>Contacts</li>
-        </ul>
-      </div>
-    </div>
-    <div class="grid grid-cols-2 pb-20 pt-5">
-      <img src="hero-burger.png" class="pr-8 mt-10" alt=""/>
-      <div>
-        <h1 class="text-8xl text-white text-center uppercase font-lilita">Classic Burger</h1>
-        <h2 class="text-6xl text-white text-center uppercase font-lilita my-5">With Onion</h2>
-        <p class="text-white font-roboto font-light text-center">Our signature burger now comes with onion and cheese. You can customize it to your likings. Freshly made to order, all in a Brioche style bun.</p>
-      </div>
+  <div
+    class="flex h-screen bg-slate-600 h-[100vh] align-middle text-white text-center">
+    <div class="m-auto">
+      <h1 class="text-5xl">Welcome to Zero to</h1>
+      <p class="mt-5">Turn your ideas into working web application.</p>
     </div>
   </div>
-  <div id="section-1" class="text-center bg-[url('/about.jpg')] pb-60 bg-cover">
-    <h1 class="text-6xl uppercase font-oswald pt-20 px-24">The burger tastes better when you eat it with family</h1>
-    <p class="font-roboto font-light text-gray-500 text-lg py-6 px-24">Spend quality time with your family and eat an affordable, nutritious and delicious meal together. Not all burgers are fast foods. All our burgers are handmade to orders for you and your family members to enjoy.</p>
-    <button class="font-oswald uppercase bg-red-500 text-white text-center py-3 px-8">Explore Full Menu</button>
-  </div>
-  <div id="section-2" class="grid grid-cols-3 bg-yellow-500 text-center px-20">
-    <div>
-      <img src="Star.png" class="w-[100px] mx-auto" alt="" />
-      <h3 class="font-oswald uppercase mt-5 mb-2">Original Recipes</h3>
-      <p class="font-light mb-5 ml-5">We use our secret recipes with only the best ingredients to make our burgers. Starting from patties, sauces, and even buns.</p>
-    </div>
-    <div>
-      <img src="Cakes.png" class="w-[100px] mx-auto" alt="" />
-      <h3 class="font-oswald uppercase mt-5 mb-2">Quality Foods</h3>
-      <p class="font-light mb-5 ml-5">We purchase our ingredients from the best suppliers daily, to ensure the freshest quality of our burgers.</p>
-    </div>
-    <div>
-      <img src="Fastdelivery.png" class="w-[100px] mx-auto" alt="" />
-      <h3 class="font-oswald uppercase mt-5 mb-2">Fastest Delivery</h3>
-      <p class="font-light mb-5 ml-5">Burgers are best served while it's hot. We deliver to your door with our speedy partners from the nearest outlest.</p>
-    </div>
-  </div>
-  <div id="section-3">
-    <h2 class="text-6xl font-oswald text-red-500 uppercase font-medium text-center px-20 pt-10">Our Crazy Burgers!</h2>
-    <p class="text-gray-500 font-light text-xl my-10 px-20">Whether you are looking for the classics, our specialties, or just wraps, salads, and fries. We have it all. We always have something that rewards your tastebud.</p>
-    <div class="grid grid-cols-2 px-40 gap-5">
-      <div id="left-item-column">
-        <Item image="crispy-chicken.jpg" title="Crispy Chicken" description="Chicken breast, chili sauce, tomatoes, pickles, coleslaw" prices="11.99"/>
-        <Item image="ultimate-bacon.jpg" title="Ultimate Bacon" description="House beef patty, cheddar cheese, smokey bacon, onion, mustard" prices="14.99"/>
-      </div>
-      <div id="right-item-column">
-        <Item image="baa-baa.jpg" title="BAA-BAA Black Sheep" description="American cheese, tomato relish, avocado, lettuce, red onion" prices="15.75"/>
-        <Item image="double-burger.jpg" title="Double Burger" description="2 beef patties, cheddar chese, mustard, pickles, tomatoes" prices="15.35"/>
-      </div>
-    </div>
-  </div>
-</div>
 </template>
