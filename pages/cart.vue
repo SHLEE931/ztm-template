@@ -3,14 +3,16 @@
     <div id="header" class="bg-[url('/DeepSkyBlue.jpg')] px-20">
       <div id="menu" class="grid grid-cols-2">
         <div id="menu-left">
-          <NuxtLink to="/"><img src="/QorvoLogo4.png" class="w-[200px]" alt="" /></NuxtLink>
+          <NuxtLink to="/"
+            ><img src="/QorvoLogo4.png" class="w-[200px]" alt=""/></NuxtLink>
         </div>
         <div id="menu-right">
           <ul class="md:grid grid-cols-4 text-lg font-oswald uppercase pt-10">
             <li class="text-white">Hardware</li>
             <li class="text-white">Instrument</li>
             <NuxtLink to="/menu" class="text-white">Components</NuxtLink>
-            <NuxtLink to="/cart" class="text-white">Cart ({{ $store.getters.totalItems }})</NuxtLink>
+            <NuxtLink to="/cart" class="text-white">Cart ({{ $store.getters.totalItems }})</NuxtLink
+            >
           </ul>
         </div>
       </div>
@@ -41,13 +43,33 @@
         >
           <td class="py-10">{{ order.name }}</td>
           <td class="text-center">{{ order.quantity }}</td>
-          <td class="text-center"><button @click="removeItem(order.name)">❌</button></td>
+          <td class="text-center">
+            <button @click="removeItem(order.name)">❌</button>
+          </td>
         </tr>
       </tbody>
       <tfoot>
         <tr class="font-oswald font-bold text-2xl bg-gray-100 uppercase">
           <td class="py-10" colspan="1">Total</td>
           <td class="text-center">{{ total }}</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              id="email"
+              type="email"
+              placeholder="Please enter your email"
+              class="w-full border border-gray-300 text-xl mt-5 py-3 px-"
+            />
+          </td>
+          <td colspan="1">
+            <button
+              class="font-oswald uppercase bg-red-500 text-white text-xl py-3 px-2 mt-5"
+              @click="submitOrder"
+            >
+              Confirm
+            </button>
+          </td>
         </tr>
       </tfoot>
     </table>
@@ -69,6 +91,12 @@ export default {
   methods: {
     removeItem(name) {
       this.$store.commit('removeItem', name);
+    },
+    submitOrder() {
+      this.$axios.post('/.netlify/functions/email', {
+        email: document.getElementById('email').value,
+        order: this.$store.state.orders,
+      });
     },
   },
 };
