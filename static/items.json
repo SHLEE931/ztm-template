@@ -1,46 +1,39 @@
 {
-  "burgers": [
+  "coupler": [
     {
-      "name": "Crispy Chicken",
-      "image":"crispy-chicken.jpg",
-      "description": "Chicken breast, chilli sauce, tomatoes, pickles, coleslaw",
-      "price": 11.99
+      "name": "ZADC-6-2G-5W-S+",
+      "image":"Coupler1.png",
+      "description": "6.7 dB Directional Coupler, 800 - 2000 MHz, 50Ω"
     },
     {
-      "name": "Ultimate Bacon",
-      "image":"ultimate-bacon.jpg",
-      "description": "House beef patty, cheddar cheese, smokey bacon, onion, mustard",
-      "price": 14.99
+      "name": "ZCDC10-01203-S+",
+      "image":"Coupler2.png",
+      "description": "10 dB Directional Coupler, 1000 - 20000 MHz, 50Ω"
     },
     {
-      "name": "Baa-Baa Black Sheep",
-      "image":"baa-baa.jpg",
-      "description": "Bacon, lettuce, tomato, onion, mayo, pickles, coleslaw",
-      "price": 15.75
+      "name": "ZCDC10-K5R44W+",
+      "image":"Coupler3.png",
+      "description": "10 dB Directional Coupler, 500 - 40000 MHz, 50Ω"
     },
     {
-      "name": "Double Burger",
-      "image":"double-burger.jpg",
-      "description": "2 beef patties, cheddar cheese, mustard, pickles, tomatoes",
-      "price": 15.35
+      "name": "ZADC-17-14HP-S",
+      "image":"Coupler4.png",
+      "description": "16.4 dB Directional Coupler, 500 - 1350 MHz, 50Ω"
     },
     {
-      "name": "Messy Beauty",
-      "image":"messy-beauty.jpg",
-      "description": "Beef patty topped with honey mustard and a sunny side up egg.",
-      "price": 23.00
+      "name": "ZCDC10-02263S+",
+      "image":"Coupler5.png",
+      "description": "10 dB Directional Coupler, 2000 - 26500 MHz, 50Ω"
     },
     {
-      "name": "Rosy Business",
-      "image":"rosy-business.jpg",
-      "description": "Beef patty topped with a hash brown covered with rose Syrup.",
-      "price": 21.00
+      "name": "ZCDC10-E6653+",
+      "image":"Coupler6.png",
+      "description": "10 dB Directional Coupler, 6000 - 65000 MHz, 50Ω"
     },
     {
-      "name": "Old Fashion",
-      "image":"old-fashion.jpg",
-      "description": "Classic cheeseburger with a grilled beef / chicken patty.",
-      "price": 18.00
+      "name": "ZGBDC10-372HP+",
+      "image":"Coupler7.png",
+      "description": "10 dB Bi-Directional Coupler, 380 - 3700 MHz, 50Ω"
     }
   ]
 }
