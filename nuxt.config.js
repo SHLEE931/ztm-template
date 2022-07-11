@@ -40,20 +40,20 @@ export default {
 
   firebase: {
     config: {
-      apiKey: 'AIzaSyDBt7kxhZiw6QBhXr3a4EjWoocFvzzXXKg',
-      authDomain: 'qorvoinventory.firebaseapp.com',
-      projectId: 'qorvoinventory',
-      storageBucket: 'qorvoinventory.appspot.com',
-      messagingSenderId: '309153854226',
-      appId: '1:309153854226:web:e327a4d247be8f785339cb',
-      measurementId: 'G-BHYVC09VE5',
+      apiKey: 'AIzaSyAOGQxiGgpRvBFQNkG15OB5j0qGrvA0Q0M',
+      authDomain: 'inventory-129e1.firebaseapp.com',
+      projectId: 'inventory-129e1',
+      storageBucket: 'inventory-129e1.appspot.com',
+      messagingSenderId: '117356456909',
+      appId: '1:117356456909:web:8f58676f29972f27dc7284',
+      measurementId: 'G-YQCPFE49JJ',
     },
 
     services: {
       auth: {
         persistence: 'local', // default
         initialize: {
-          //onAuthStateChangedAction: 'onAuthStateChangedAction',
+          onAuthStateChangedAction: 'onAuthStateChangedAction',
           subscribeManually: false,
         },
         ssr: false, // default
