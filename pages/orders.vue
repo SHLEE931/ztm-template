@@ -7,11 +7,12 @@
             ><img src="/QorvoLogo4.png" class="w-[200px]" alt="" /></NuxtLink>
         </div>
         <div id="menu-right">
-          <ul class="md:grid grid-cols-4 text-lg font-oswald uppercase pt-10">
+          <ul class="md:grid grid-cols-5 text-lg font-oswald uppercase pt-10">
             <li class="text-white">Hardware</li>
             <li class="text-white">Instrument</li>
             <NuxtLink to="/menu" class="text-white">Components</NuxtLink>
             <NuxtLink to="/cart" class="text-white" >Cart ({{ $store.getters.totalItems }})</NuxtLink>
+            <li class="text-white">History</li>
           </ul>
         </div>
       </div>
