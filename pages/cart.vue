@@ -55,20 +55,10 @@
         </tr>
         <tr>
           <td colspan="2">
-            <input
-              id="ID"
-              type="ID"
-              placeholder="Enter your ID"
-              class="w-full border border-gray-300 text-xl mt-5 py-3 px-"
-            />
+            <input id="ID" type="text" placeholder="Enter your ID" class="w-full border border-gray-300 text-xl mt-5 py-3 px-2" />
           </td>
           <td colspan="1">
-            <button
-              class="font-oswald uppercase bg-red-500 text-white text-xl py-3 px-2 mt-5"
-              @click="submitOrder"
-            >
-              Confirm
-            </button>
+            <button class="font-oswald uppercase bg-red-500 text-white text-xl py-3 px-2 mt-5" @click="submitOrder">Confirm</button>
           </td>
         </tr>
       </tfoot>
@@ -93,11 +83,11 @@ export default {
       this.$store.commit('removeItem', name);
     },
     submitOrder() {
-      const dir = 'C:/Users/sl100983/Desktop/ZTM/ztm-template/netlify/functions/db';
+      const dir = '/.netlify/functions/db';
       alert('Your order has been submitted');
       this.axios.post(dir, {
         ID: document.getElementById('ID').value,
-        order: this.$store.state.orders,
+        orders: this.$store.state.orders,
       });
     },
   },
