@@ -13,9 +13,11 @@ exports.handler = async function (event, context) {
   const db = getFirestore(app);
   try {
     const body = JSON.parse(event.body);
+    const username = body.ID;
     const orders = body.orders;
 
     const response = await db.collection('orders').add({
+      username,
       orders,
     });
     return {
