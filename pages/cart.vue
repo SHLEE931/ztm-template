@@ -11,8 +11,8 @@
             <li class="text-white">Hardware</li>
             <li class="text-white">Instrument</li>
             <NuxtLink to="/menu" class="text-white">Components</NuxtLink>
-            <NuxtLink to="/cart" class="text-white">Cart ({{ $store.getters.totalItems }})</NuxtLink
-            >
+            <NuxtLink to="/cart" class="text-white">Cart ({{ $store.getters.totalItems }})</NuxtLink>
+            <NuxtLink to="/orders" class="text-white">History</NuxtLink>
           </ul>
         </div>
       </div>
