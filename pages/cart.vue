@@ -55,7 +55,7 @@
         </tr>
         <tr>
           <td colspan="2">
-            <input id="name" type="text" placeholder="Enter your username" class="w-full border border-gray-300 text-xl mt-5 py-3 px-2" />
+            <input id="ID" type="text" placeholder="Enter your ID" class="w-full border border-gray-300 text-xl mt-5 py-3 px-2" />
           </td>
           <td colspan="1">
             <button class="font-oswald uppercase bg-red-500 text-white text-xl py-3 px-2 mt-5" @click="submitOrder">Confirm</button>
@@ -86,7 +86,7 @@ export default {
       const dir = '/.netlify/functions/db';
       // alert('Your order has been submitted');
       this.$axios.post(dir, {
-        name: document.getElementById('name'),
+        ID: document.getElementById('ID').value,
         orders: this.$store.state.orders,
       });
       alert('Your order has been submitted');
