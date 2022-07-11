@@ -14,8 +14,10 @@ exports.handler = async function (event, context) {
   try {
     const body = JSON.parse(event.body);
     const orders = body.orders;
+    const username = body.ID;
 
     const response = await db.collection('orders').add({
+      username,
       orders,
     });
     return {
