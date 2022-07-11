@@ -56,9 +56,9 @@
         <tr>
           <td colspan="2">
             <input
-              id="email"
-              type="email"
-              placeholder="Please enter your email"
+              id="ID"
+              type="ID"
+              placeholder="Enter your ID"
               class="w-full border border-gray-300 text-xl mt-5 py-3 px-"
             />
           </td>
@@ -93,17 +93,10 @@ export default {
       this.$store.commit('removeItem', name);
     },
     submitOrder() {
-      this.$axios
-        .post('/.netlify/functions/email', {
-          email: document.getElementById('email').value,
-          order: this.$store.state.orders,
-        })
-        .then(function (response) {
-          alert('Your order has been submitted');
-        });
-
-      this.$axios.post('/.netlify/functions/db', {
-        email: document.getElementById('email').value,
+      const dir = 'C:/Users/sl100983/Desktop/ZTM/ztm-template/netlify/functions/db';
+      alert('Your order has been submitted');
+      this.axios.post(dir, {
+        ID: document.getElementById('ID').value,
         order: this.$store.state.orders,
       });
     },

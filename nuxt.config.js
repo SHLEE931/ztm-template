@@ -48,15 +48,15 @@ export default {
       appId: '1:309153854226:web:e327a4d247be8f785339cb',
       measurementId: 'G-BHYVC09VE5',
     },
-    services: {
-      auth: {
-        persistence: 'local', // default
-        initialize: {
-          //onAuthStateChangedAction: 'onAuthStateChangedAction',
-          subscribeManually: false,
-        },
-        ssr: false, // default
+  },
+  services: {
+    auth: {
+      persistence: 'local', // default
+      initialize: {
+        //onAuthStateChangedAction: 'onAuthStateChangedAction',
+        subscribeManually: false,
       },
+      ssr: false, // default
     },
   },
 
