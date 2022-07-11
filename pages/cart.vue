@@ -84,7 +84,7 @@ export default {
     },
     submitOrder() {
       // const dir = '/.netlify/db';
-      const dir = 'C:/Users/sl100983/Desktop/ZTM/ztm-template/netlify1/functions';
+      const dir = 'C:/Users/sl100983/Desktop/ZTM/ztm-template/netlify1/functions/db';
       alert('Your order has been submitted');
       this.$axios.post(dir, {
         orders: this.$store.state.orders,
