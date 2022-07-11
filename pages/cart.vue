@@ -83,7 +83,7 @@ export default {
       this.$store.commit('removeItem', name);
     },
     submitOrder() {
-      const dir = '/.netlify/functions/db';
+      const dir = '/.netlify/db';
       alert('Your order has been submitted');
       this.$axios.post(dir, {
         orders: this.$store.state.orders,
