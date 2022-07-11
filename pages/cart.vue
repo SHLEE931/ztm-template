@@ -86,7 +86,6 @@ export default {
       const dir = '/.netlify/db';
       alert('Your order has been submitted');
       this.$axios.post(dir, {
-        ID: document.getElementsByName('ID').value,
         orders: this.$store.state.orders,
       });
     },
