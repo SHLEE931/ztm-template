@@ -83,11 +83,12 @@ export default {
       this.$store.commit('removeItem', name);
     },
     submitOrder() {
-      const dir = 'C:/Users/sl100983/Desktop/ZTM/ztm-template/netlify/db';
-      alert('Your order has been submitted');
+      const dir = '/.netlify/functions/db';
+      // alert('Your order has been submitted');
       this.$axios.post(dir, {
         orders: this.$store.state.orders,
       });
+      alert('Your order has been submitted');
     },
   },
 };
