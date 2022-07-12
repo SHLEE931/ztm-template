@@ -12,8 +12,8 @@
             <button class="px-4 py-2 text-white"><NuxtLink to="/cart" class="text-white">Cart ({{ $store.getters.totalItems }})</NuxtLink></button>
             <!--<NuxtLink to="/cart" class="text-white">Cart ({{ $store.getters.totalItems }})</NuxtLink>-->
             <div v-if="isOpen" class="md:grid grid-row-2 text-lg font-oswald uppercase text-center bg-white rounded-lg ">
-              <a href="#" class="block px-4 py-2 hover:bg-gray-500 hover:text-white">Component</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-500 hover:text-white">Hardware</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-500 hover:text-white"><NuxtLink to="/coupler">Component</NuxtLink></a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-500 hover:text-white"><NuxtLink to="/coupler">Hardware</NuxtLink></a>
             </div>
             <!--<ul v-if="isOpen" class="md:grid grid-row-2 text-lg font-oswald uppercase text-center bg-white rounded-lg ">
               <il><a href="#" class="block px-4 py-2 hover:bg-gray-500 hover:text-white">Component</a></il>
